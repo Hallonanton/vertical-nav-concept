@@ -52,38 +52,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-
-/*==============================================================================
-  # Fix react warning
-==============================================================================*/
-
-exports.onCreateWebpackConfig = ({ getConfig, stage, actions }) => {
-  const config = getConfig()
-  if (stage.startsWith('develop') && config.resolve) {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      'react-dom': '@hot-loader/react-dom'
-    }
-  }
-
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.(glsl|frag|vert)$/,
-          use: [
-            "glslify-import-loader",
-            {
-              loader: "raw-loader",
-              options: {
-                esModule: false,
-              },
-            },
-            "glslify-loader",
-          ]
-        },
-      ],
-    }
-  })
-}

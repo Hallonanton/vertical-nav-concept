@@ -132,40 +132,40 @@ class SectionHome extends Component {
     const items = [
       {
         title: "Mer om",
-        to: "/about",
+        to: "/",
         color: "#99e9f2",
         backgroundImage: "https://placekitten.com/660/270"
       },
       {
         title: "Kunskap",
-        to: "/knowledge",
+        to: "/",
         color: "#8ce99a",
         backgroundImage: "https://placekitten.com/660/270"
       },
       {
         title: "Erfarenhet",
-        to: "/experience",
+        to: "/",
         color: "#ffd43b",
         backgroundImage: "https://placekitten.com/660/270"
       },
       {
         title: "Nybergs Bil",
         topTitle: "Case",
-        to: "/nybergs-bil",
+        to: "/",
         color: "#9e7b56",
         backgroundImage: "https://placekitten.com/660/270"
       },
       {
         title: "Svenska Hem",
         topTitle: "Case",
-        to: "/svenska-hem",
+        to: "/",
         color: "#e03131",
         backgroundImage: "https://placekitten.com/660/270"
       },
       {
         title: "OAS",
         topTitle: "Case",
-        to: "/oas",
+        to: "/",
         color: "#5b2160",
         backgroundImage: "https://placekitten.com/660/270"
       }

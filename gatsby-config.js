@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Portfolio',
     titleSuffix: '|',
-    sitename: 'Anton Pedersen',
-    siteUrl: 'https://hallonanton-portfolio.netlify.com/',
+    sitename: 'Vertical Nav Concept',
+    siteUrl: 'https://vertical-nav-concept.netlify.app/',
     description: '',
   },
   plugins: [
